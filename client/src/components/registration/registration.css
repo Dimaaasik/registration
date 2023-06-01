@@ -1,0 +1,26 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 200px;
+}
+.registration__header {
+  font-size: 30px;
+  font-weight: 700;
+}
+.registration input {
+  margin: 10px 20px;
+}
+.registration__btn {
+  border: none;
+  background-color: #481d1d;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=registration.css.map */
