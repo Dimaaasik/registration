@@ -2,11 +2,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 const config = require('config')
 const authRouter = require('./routes/auth_routes')
+const corsMiddleware = require('./middleware/cors.meddleware')
 
 const app = express();
 const PORT = config.get("serverPort");
 const URL = config.get("url")
 
+app.use(corsMiddleware)
 app.use(express.json())
 app.use('/api/auth', authRouter)
 
