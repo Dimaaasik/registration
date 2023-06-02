@@ -69,4 +69,28 @@ router.post('/login',
 
     })
 
+router.get('/login/admin', async (req, res) => {
+    try {
+        const users = await User.find().sort({ title: 1 });
+        res.status(200).json(users);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+
+
+router.delete('/login/admin', async (req, res) => {
+    try {
+        const users = await User.deleteMany({department: 2})
+        res.status(200).json(users);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+
+
 module.exports = router

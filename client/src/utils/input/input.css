@@ -1,6 +1,6 @@
 input {
   border: none;
-  border-bottom: #481d1d solid 3px;
+  border-bottom: #b22525 solid 3px;
   background: transparent;
   width: 100%;
   padding: 3px;
@@ -11,22 +11,22 @@ input:focus {
 }
 ::-webkit-input-placeholder {
   /* Chrome */
-  color: #481d1d;
+  color: #b22525;
   font-weight: 70;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #481d1d;
+  color: #b22525;
   font-weight: 700;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #481d1d;
+  color: #b22525;
   font-weight: 700;
 }
 :-moz-placeholder {
   /* Firefox 4 - 18 */
-  color: #481d1d;
+  color: #b22525;
   font-weight: 700;
 }
 /*# sourceMappingURL=input.css.map */

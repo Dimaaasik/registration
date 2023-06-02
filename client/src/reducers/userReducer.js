@@ -8,10 +8,12 @@ const defaultState = {
 export default function userReducer(state = defaultState, action){
     switch (action.type){
         case SET_USER:
+            // console.log(action.payload.email)
             return {
                 ...state,
                 currentUser: action.payload,
-                isAuth: true
+                isAuth: true,
+                email: action.payload.email
             }
         default:
             return state

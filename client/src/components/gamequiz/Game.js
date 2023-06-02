@@ -35,7 +35,7 @@ function Result({correct}) {
   return (
     <div className="result">
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
-      <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
+      <h2>Вы відгадали {correct} теста з {questions.length}х</h2>
         <a href='http://localhost:3000/login'>
             <button>Спочатку</button>
         </a>
